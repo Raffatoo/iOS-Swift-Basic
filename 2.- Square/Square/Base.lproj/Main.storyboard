@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Square" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdx-Jx-awl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
+                                <color key="backgroundColor" red="1" green="0.29944504189999999" blue="0.24858995710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="😇"/>
+                                <connections>
+                                    <action selector="alertMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ni-wo-wOG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEq-I4-6aA">
+                                <rect key="frame" x="0.0" y="333.5" width="375" height="167"/>
+                                <color key="backgroundColor" red="1" green="0.29944504189999999" blue="0.24858995710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="😈"/>
+                                <connections>
+                                    <action selector="alertMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z5U-nC-pzL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grC-xg-bnW">
+                                <rect key="frame" x="0.0" y="167" width="375" height="166.5"/>
+                                <color key="backgroundColor" red="0.92260802250889196" green="0.96218670685279184" blue="0.26095014432258828" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="👻"/>
+                                <connections>
+                                    <action selector="alertMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nA7-Fq-0Oi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bup-7P-HVO">
+                                <rect key="frame" x="0.0" y="500.5" width="375" height="166.5"/>
+                                <color key="backgroundColor" red="0.92255949974060059" green="0.95886677503585815" blue="0.26473277807235718" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="🤖"/>
+                                <connections>
+                                    <action selector="alertMessageWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KN8-G4-aow"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="grC-xg-bnW" firstAttribute="height" secondItem="xEq-I4-6aA" secondAttribute="height" id="2iC-R9-ZVx"/>
+                            <constraint firstItem="Bup-7P-HVO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3Zt-sD-qv6"/>
+                            <constraint firstItem="Xdx-Jx-awl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6le-MC-mHS"/>
+                            <constraint firstItem="xEq-I4-6aA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="K2C-MF-Lat"/>
+                            <constraint firstItem="xEq-I4-6aA" firstAttribute="top" secondItem="grC-xg-bnW" secondAttribute="bottom" id="MsQ-4q-1pK"/>
+                            <constraint firstItem="Bup-7P-HVO" firstAttribute="top" secondItem="xEq-I4-6aA" secondAttribute="bottom" id="QZi-sI-npT"/>
+                            <constraint firstItem="grC-xg-bnW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="am4-Zc-WhD"/>
+                            <constraint firstItem="Xdx-Jx-awl" firstAttribute="height" secondItem="grC-xg-bnW" secondAttribute="height" id="bgH-Ya-lcT"/>
+                            <constraint firstItem="grC-xg-bnW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eDh-S4-OCt"/>
+                            <constraint firstItem="Xdx-Jx-awl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eb5-dU-Lf2"/>
+                            <constraint firstItem="grC-xg-bnW" firstAttribute="top" secondItem="Xdx-Jx-awl" secondAttribute="bottom" id="fJ1-KX-hYZ"/>
+                            <constraint firstItem="xEq-I4-6aA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gvJ-KG-db1"/>
+                            <constraint firstItem="xEq-I4-6aA" firstAttribute="height" secondItem="Bup-7P-HVO" secondAttribute="height" id="hOV-58-W88"/>
+                            <constraint firstItem="Xdx-Jx-awl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="k9j-jR-zzI"/>
+                            <constraint firstItem="Bup-7P-HVO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="uVb-3N-O5s"/>
+                            <constraint firstItem="Bup-7P-HVO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="w0k-sF-YbQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
