@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UsingStack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Back" translatesAutoresizingMaskIntoConstraints="NO" id="ye5-5a-PXh">
+                                <rect key="frame" x="44" y="0.0" width="724" height="375"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="8hi-EX-APp">
+                                <rect key="frame" x="93.666666666666686" y="15" width="625" height="159.33333333333334"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Shb-PT-8h6">
+                                        <rect key="frame" x="173.6666666666666" y="0.0" width="277.33333333333326" height="42.333333333333336"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information Architecture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Kgk-Bz-EV2">
+                                                <rect key="frame" x="0.0" y="0.0" width="277.33333333333331" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="20"/>
+                                                <color key="textColor" red="1" green="0.29944504189999999" blue="0.24858995710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="the structure behind a well-thought-out application." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="INi-KV-gzW">
+                                                <rect key="frame" x="0.0" y="28.333333333333336" width="277.33333333333331" height="14"/>
+                                                <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="10"/>
+                                                <color key="textColor" red="1" green="0.29944504189999999" blue="0.24858995710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="CtT-Dw-hjE">
+                                        <rect key="frame" x="174.33333333333331" y="54.333333333333329" width="276" height="104.99999999999999"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img2" translatesAutoresizingMaskIntoConstraints="NO" id="ZbU-Z3-jKg">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="105"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="3LX-2w-HO1"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img2" translatesAutoresizingMaskIntoConstraints="NO" id="flF-d0-49s">
+                                                <rect key="frame" x="93" y="0.0" width="90" height="105"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="NLH-my-UUD"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img2" translatesAutoresizingMaskIntoConstraints="NO" id="XzG-9X-AQE">
+                                                <rect key="frame" x="186" y="0.0" width="90" height="105"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="90" id="iGi-VB-943"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Universal design and accessibility " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5z-bf-x3h">
+                                        <rect key="frame" x="224.66666666666663" y="159.33333333333334" width="175.66666666666663" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact" hidden="YES"/>
+                                    </label>
+                                </subviews>
+                                <variation key="heightClass=compact" alignment="center"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kIp-Ju-s1f">
+                                <rect key="frame" x="332" y="247" width="148" height="61"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rg1-nM-yex">
+                                        <rect key="frame" x="0.0" y="0.0" width="148" height="28"/>
+                                        <color key="backgroundColor" red="0.9987526535987854" green="0.29843711853027344" blue="0.24532234668731689" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="6TL-LS-zUP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Sing Up"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97L-GD-bVr">
+                                        <rect key="frame" x="0.0" y="33" width="148" height="28"/>
+                                        <color key="backgroundColor" red="0.99875265359999998" green="0.29843711849999999" blue="0.2453223467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="CsN-5z-knt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Log in with Facebook"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="148" id="MBb-8U-cA9"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ye5-5a-PXh" secondAttribute="bottom" id="00W-97-lfX"/>
+                            <constraint firstItem="kIp-Ju-s1f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ar7-WH-Pep"/>
+                            <constraint firstItem="ye5-5a-PXh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ht3-aV-jCv"/>
+                            <constraint firstItem="ye5-5a-PXh" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JPE-oi-gTy"/>
+                            <constraint firstItem="8hi-EX-APp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49.5" id="OzQ-rk-YvR"/>
+                            <constraint firstItem="ye5-5a-PXh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="azU-Pc-R2x"/>
+                            <constraint firstItem="ye5-5a-PXh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dDK-Yl-nye"/>
+                            <constraint firstItem="kIp-Ju-s1f" firstAttribute="centerX" secondItem="ye5-5a-PXh" secondAttribute="centerX" id="ixL-bC-BHl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kIp-Ju-s1f" secondAttribute="bottom" constant="46" id="pp9-mB-DeN"/>
+                            <constraint firstItem="8hi-EX-APp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="rrg-HM-hzT">
+                                <variation key="heightClass=compact" constant="15"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8hi-EX-APp" secondAttribute="trailing" constant="49.5" id="zlQ-2B-k07"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.74384236453201"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Back" width="375" height="812"/>
+        <image name="img2" width="105" height="105"/>
+    </resources>
+</document>
